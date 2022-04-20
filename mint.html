@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <script src="Assets/Scripts/script.js"></script>
+        <script src="Assets/Scripts/medium-zoom.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="Assets/Images/linux_mint_icon.png">
+        <title>Linux Mint</title>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="ubuntu.html"> Ubuntu |</a></li>
+                        <li><a href="arch.html"> Arch |</a></li>
+                        <li><a href="fedora.html"> Fedora |</a></li>
+                        <li><a class="active" href="mint.html"> Linux Mint |</a></li>
+                        <li><a href="contact.html"> Contact Us |</a></li>
+                        <li><a href="report.html"> Web Dev Report |</a></li>
+
+
+                    </ul>
+                </nav>
+                <div id="rotator"  >
+                    <img id="rotatorImage"  src="Assets/Images/linux_mint_header.png" alt="Linux Mint logo">
+                    <div class="buttons">
+                        <button class="previous" onclick="previousImage();">&lt;</button>
+                        <button class="next" onclick="nextImage();">></button>
+                    </div>
+                </div>
+                
+            </header>
+            <main>
+                <div id="introText">
+                    <h1>Linux Mint <img class="smallIntroPic" src="Assets/Images/linux_mint_icon.png" alt="Square Linux mint logo"/></h1>
+                    <p>Linux Mint is a community-driven Linux distribution based on Ubuntu (in turn based on Debian), bundled with a variety of free and open-source applications. It can provide full out-of-the-box multimedia support for those who choose to include proprietary software such as multimedia codecs.
+                    The Linux Mint project was created by Clément Lefèbvre and is actively maintained by the Linux Mint Team and community.
+                    </p>
+                    <hr>
+                </div>
+                <div id="content">
+                    <div class=mainContent>
+                    <h2>More about Linux Mint</h2>
+                    <p>Linux Mint began in 2006 with a beta release, 1.0, code-named 'Ada', based on Kubuntu. Linux Mint 2.0 'Barbara' was the first version to use Ubuntu as its codebase. It had few users until the release of Linux Mint 3.0, 'Cassandra'.
+                    Linux Mint 2.0 was based on Ubuntu 6.10, using Ubuntu's package repositories and using it as a codebase. It then followed its own codebase, building each release from the previous one, but continuing to use the package repositories of the latest Ubuntu release. This made the two systems' bases almost identical, guaranteeing full compatibility between them, rather than requiring Mint to be a fork.
+                    <br>
+                    In 2008, Linux Mint adopted the same release cycle as Ubuntu and dropped its minor version number before releasing version 5 'Elyssa'. The same year, in an effort to increase compatibility between the two systems, Linux Mint decided to abandon its codebase and changed the way it built its releases. Starting with Linux Mint 6 'Felicia', each release was based completely on the latest Ubuntu release, built directly from it, and made available approximately one month after the corresponding Ubuntu release (usually in May or November).
+                    
+                   </p>
+                    <h4>Website breach</h4>
+                    <p>On February 20, 2016, the Linux Mint website was breached by unknown hackers who briefly replaced download links for a version of Linux Mint with a modified version containing malware. The hackers also breached the database of the website's user forum. Linux Mint immediately took its server offline and implemented enhanced security configuration for their website and forum.
+                    </p>
+                    </div>
+                    <div class=sideArea>
+                        <iframe class="responsiveIframe" src="https://www.youtube.com/embed/eX-3Yc8vARs"></iframe>
+                    </div>
+                </div>
+                <div id="threeContainers">
+                    <div class="containerOne">
+                        <img class="containerImg" src="Assets/Images/mint_desktop.png" alt="Linux Mint desktop enviroment"> 
+                    </div>
+                    <div class="containerTwo">
+                        <h4>System Requirements</h4>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Storage</th>
+                                <th>Architecture</th>
+                            </tr>
+                            <tr>
+                                <td>Dual-core 1.5GHz</td>
+                                <td>2GB</td>
+                                <td>20GB</td>
+                                <td>X86_64, X64</td>
+                            </tr>
+                        </table>
+                        <h4>Releases</h4>
+                        <table>
+                            <tr>
+                                <th>Version, Codename</th>
+                                <th>Package base</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>20.2 "Uma"</td>
+                                <td>Ubuntu Focal</td>
+                                <td>Long term support (LTS), untill April 2025</td>
+                            </tr>
+                            <tr>
+                                <td>19.3 "Tricia"</td>
+                                <td>Ubuntu Bionic</td>
+                                <td>Long term support (LTS), untill April 2023</td>
+                            </tr>
+                            <tr>
+                                <td>4 "Debbie"</td>
+                                <td>Debian Buster</td>
+                                <td>Long term support (LTS).</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="containerThree">
+                        <img class="containerImg" src="Assets/Images/mint_system_settings.png" alt="Linux Mint System settings">
+                    </div>
+                </div>
+                
+                <hr>
+            </main>
+        </div>
+        <footer>
+            <p>Site design: Vilim Mikic, TU856, 2021</p>
+        </footer>
+
+    </body>
+</html>

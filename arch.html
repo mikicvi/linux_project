@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <script src="Assets/Scripts/script.js"></script>
+        <script src="Assets/Scripts/medium-zoom.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="Assets/Images/arch_icon.png">
+        <title>Arch Linux</title>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="ubuntu.html"> Ubuntu |</a></li>
+                        <li><a class="active" href="arch.html"> Arch |</a></li>
+                        <li><a href="fedora.html"> Fedora |</a></li>
+                        <li><a href="mint.html"> Linux Mint |</a></li>
+                        <li><a href="contact.html"> Contact Us |</a></li>
+                        <li><a href="report.html"> Web Dev Report |</a></li>
+
+                    </ul>
+                </nav>
+                <div id="rotator"  >
+                    <img id="rotatorImage"  src="Assets/Images/arch_linux_header.png" alt="Arch linux logo">
+                    <div class="buttons">
+                        <button class="previous" onclick="previousImage();">&lt;</button>
+                        <button class="next" onclick="nextImage();">></button>
+                    </div>
+                </div>
+                
+            </header>
+            <main>
+                <div id="introText">
+                    <h1>Arch Linux <img class="smallIntroPic" src="Assets/Images/arch_icon.png" alt="Round Arch logo"/></h1>
+                    <p>Arch Linux is a Linux distribution created for computers with x86-64 processors. Arch Linux adheres to the KISS principle ("Keep It Simple, Stupid").The project attempts to have minimal distribution-specific changes, and therefore minimal breakage with updates, and be pragmatic over ideological design choices and focus on customizability rather than user-friendliness.
+
+                    Pacman, a package manager written specifically for Arch Linux, is used to install, remove and update software packages. Arch Linux uses a rolling release model, meaning there are no "major releases" of completely new versions of the system; a regular system update is all that is needed to obtain the latest Arch software; the installation images released every month by the Arch team are simply up-to-date snapshots of the main system components.
+                    </p>
+                    <hr>
+                </div>
+                <div id="content">
+                    <div class=mainContent>
+                    <h2>More about Arch</h2>
+                    <p>Inspired by CRUX, another minimalist distribution, Judd Vinet started the Arch Linux project in March 2002. The name was chosen because Vinet liked the word's meaning of "the principal," as in "arch-enemy".
+                    <br>
+                    Originally only for 32-bit x86 CPUs, the first x86_64 installation ISO was released in April 2006.
+                    Vinet led Arch Linux until 1 October 2007, when he stepped down due to lack of time, transferring control of the project to Aaron Griffin.
+                    </p>
+                    <p>
+                    The migration to systemd as its init system started in August 2012, and it became the default on new installations in October 2012. It replaced the SysV-style init system, used since the distribution inception.
+                    On 24 February 2020, Aaron Griffin announced that due to his limited involvement with the project, he would, after a voting period, transfer control of the project to Levente Polyak. This change also led to a new 2-year term period being added to the Project Leader position.
+                    The end of i686 support was announced in January 2017, with the February 2017 ISO being the last one including i686 and making the architecture unsupported in November 2017. Since then, the community derivative Arch Linux 32 can be used for i686 hardware.
+                    <br>
+                    On March 2021, Arch Linux developers were thinking of porting Arch Linux packages to x86_64-v3. x86-64-v3 roughly correlates to Intel Haswell(4th Gen) era of processors.</p>
+                    <p>
+                    Until Pacman version 4.0.0, Arch Linux's package manager lacked support for signed packages.Packages and metadata were not verified for authenticity by Pacman during the download-install process. Without package authentication checking, tampered-with or malicious repository mirrors could compromise the integrity of a system. Pacman 4 allowed verification of the package database and packages, but it was disabled by default. In November 2011, package signing became mandatory for new package builds, and as of the 21st of March 2012, every official package is signed.
+                    In June 2012, package signing verification became official and is now enabled by default in the installation process.</p>
+                    </div>
+                    <div class=sideArea>
+                        <iframe class="responsiveIframe" src="https://www.youtube.com/embed/LY1ubqXkPcE"></iframe>
+                    </div>
+                </div>
+                <div id="threeContainers">
+                    <div class="containerOne">
+                        <img class="containerImg" src="Assets/Images/cutefish_arch.png" alt="Cutefish desktop enviroment on Arch linux"> 
+                    </div>
+                    <div class="containerTwo">
+                        <p>System Requirements</p>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Storage</th>
+                                <th>Architecture</th>
+                            </tr>
+                            <tr>
+                                <td>at least Pentium 4</td>
+                                <td>minimum 512MB</td>
+                                <td>8GBGB</td>
+                                <td>i686, AMD64</td>
+                            </tr>
+                        </table>
+                        <p>Compatible Desktop Enviroments</p>
+                        <ol>
+                            <li class="list">Budgie | <a class="listA" href="https://getsol.us/home/">Solus</a></li>
+                            <li class="list">Cinnamon | <a class="listA" href="https://github.com/linuxmint/Cinnamon">Cinnamon</a></li>
+                            <li class="list">Cutefish | <a class="listA" href="https://en.cutefishos.com/">Cutefish</a></li>
+                            <li class="list">Deepin | <a class="listA" href="https://www.deepin.org/en/">Deepin</a></li>
+                            <li class="list">Enlightenment | <a class="listA" href="https://www.enlightenment.org/">Enlightenment</a></li>
+                        </ol>
+                    </div>
+                    <div class="containerThree">
+                        <img class="containerImg" src="Assets/Images/custom_desktop_arch.png" alt="Custom desktop enviroment set up on Arch linux">
+                    </div>
+                </div>
+                
+                <hr>
+            </main>
+        </div>
+        <footer>
+            <p>Site design: Vilim Mikic, TU856, 2021</p>
+        </footer>
+
+    </body>
+</html>

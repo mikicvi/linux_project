@@ -1,0 +1,287 @@
+html, body{
+    font-family: "Open Sans", sans-serif;
+    background-image: url("../Images/bg_gradient.png");
+    margin: 0px;
+    padding: 20px; 
+    font-size: 10px;
+    color:lightgray;
+}
+
+
+h1{
+    font-size: 2.8rem;
+    color: lightgray;
+}
+h5,h4,h3,h2{
+    color: darkorange;
+}
+main{
+    background-color:rgba(0, 51, 51, 0.432);
+    /*background-color: rgb(78, 88, 99);*/
+    position:relative;
+    width: 100%;
+    margin: auto;
+    min-height: 900px;
+    height: 100%;
+    border-radius: 10px;
+}
+#rotator{
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+#rotatorImage{
+    border-radius: 5%;
+    width: 100%;
+    max-height: 300px;
+    min-height: 300px;
+    opacity: 0.8;
+}
+
+.previous, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0.7;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    /*z-index is needed to keep navbar on top of image carousel*/
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkslategray;
+    background-image: url("../Images/nav_bar_gradient.png");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ 
+}
+li{
+    float:left;
+}
+li a{
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 12px 6px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(150, 187, 187);
+}
+.active{
+    background: #2b90f5;
+   }
+nav .active{
+    background-color: rgb(109, 153, 153);
+}
+#introText{
+    text-align: center;
+    font-size: 0.9rem;
+}
+.smallIntroPic{
+    height: 7%;
+    width: 7%;
+}
+#content{
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.mainContent{
+    font-size: 0.95rem;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+.reportMainContent{
+    padding: 10%;
+}
+.sideArea{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.responsiveIframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 97%;
+    border: none;
+    border-radius: 20px;
+}
+#threeContainers{
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%;
+    border: white 1px solid;
+}
+.containerOne, .containerTwo, .containerThree{
+    border: 1px solid white;
+}
+.containerImg{
+    width: 100%;
+    height: 100%;
+}
+
+table,tr,td{
+    border: 1px solid lightsteelblue;
+}
+.list{
+    display:grid;
+
+}
+footer{
+    background-image: url("../Images/nav_bar_gradient.png");
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* CSS used for project report only, not used anywhere else on the site. */
+.webReport, #webReport{
+    background-image: url("../Images/bg_gradient_long.png");
+}
+.researchImg{
+    width: 70%;
+    height: 30%;
+}
+.researchContainer{
+    padding-left: 25%;
+}
+
+
+
+/* Contact form CSS */
+#introTextContact{
+    text-align: center;
+    font-size: 0.9rem;
+}
+.wrapper{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    border:gray 5px solid;
+}
+.wrapper .input_field{
+    margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+    width: 95%;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.wrapper textarea{
+    height: 80px;
+    resize: none;
+}
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 105%;
+    background: slategray;
+    color: snow;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#error_message{
+    margin-bottom: 20px;
+    color: #ff0008;
+    padding: 0px;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+
+
+
+/*Media Queries*/
+  /* Ultra Wide screens */
+  @media only screen  {
+    html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    font-size: 1.2rem;
+    }
+    }
+
+  /* Wide Screens */
+  @media only screen and (max-width : 1200px) {
+    html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    font-size: 1.1rem;
+    }
+    }
+    /* Desktops */
+    @media only screen and (max-width : 992px) {
+    html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    font-size: 1rem;
+    }
+    }
+    /* Tablets */
+    @media only screen and (max-width : 768px) {
+    html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    font-size: 0.8rem;
+    }
+    }
+    /* Phones */
+    @media only screen and (max-width : 480px) {
+    html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    font-size: 0.6rem;
+    }
+    }
+    /* Custom */
+    @media only screen and (max-width : 320px) {
+    html, body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    font-size: 0.5rem;
+    }
+    }

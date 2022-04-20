@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <script src="Assets/Scripts/script.js"></script>
+        <script src="Assets/Scripts/medium-zoom.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="Assets/Images/ubuntu_icon.png">
+        <title>Ubuntu</title>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a class="active" href="ubuntu.html"> Ubuntu |</a></li>
+                        <li><a href="arch.html"> Arch |</a></li>
+                        <li><a href="fedora.html"> Fedora |</a></li>
+                        <li><a href="mint.html"> Linux Mint |</a></li>
+                        <li><a href="contact.html"> Contact Us |</a></li>
+                        <li><a href="report.html"> Web Dev Report |</a></li>
+
+                    </ul>
+                </nav>
+                <div id="rotator">
+                    <img id="rotatorImage" src="Assets/Images/ubuntu_header.jpg" alt="Ubuntu logo">
+                    <div class="buttons">
+                        <button class="previous" onclick="previousImage();">&lt;</button>
+                        <button class="next" onclick="nextImage();">></button>
+                    </div>
+                </div>
+                
+            </header>
+            <main>
+                <div id="introText">
+                    <h1>Ubuntu <img class="smallIntroPic" src="Assets/Images/ubuntu_round.png" alt="Round ubuntu logo"/></h1>
+                    <p>Ubuntu is a Linux distribution based on Debian and composed mostly of free and open-source software. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots. All the editions can run on the computer alone, or in a virtual machine. Ubuntu is a popular operating system for cloud computing, with support for OpenStack. Ubuntu's default desktop has been GNOME, since version 17.10.
+                    </p>
+                    <hr>
+                </div>
+                <div id="content">
+                    <div class=mainContent>
+                    <h2>More about Ubuntu</h2>
+                    <p>Ubuntu is released every six months, with long-term support (LTS) releases every two years. As of 22 April 2021, the most recent long-term support release is 20.04 ("Focal Fossa"), which is supported until 2025 under public support and until 2030 as a paid option for companies and free for individuals who register. The latest standard release is 21.10 ("Impish Indri"), which is supported for nine months.
+                    <br>
+                    Ubuntu is developed by British company Canonical, and a community of other developers, under a meritocratic governance model. Canonical provides security updates and support for each Ubuntu release, starting from the release date and until the release reaches its designated end-of-life (EOL) date. Canonical generates revenue through the sale of premium services related to Ubuntu and donations from those who download the Ubuntu software.
+                    <br>
+                    Ubuntu is named after the Nguni philosophy of ubuntu, which Canonical indicates means "humanity to others" with a connotation of "I am what I am because of who we all are".</p>
+                    <h4>Background</h4>
+                    <p>Ubuntu is built on Debian's architecture and infrastructure, and comprises Linux server, desktop and discontinued phone and tablet operating system versions. Ubuntu releases updated versions predictably every six months, and each release receives free support for nine months (eighteen months prior to 13.04) with security fixes, high-impact bug fixes and conservative, substantially beneficial low-risk bug fixes. The first release was in October 2004.</p>
+                    </div>
+                    <div class=sideArea>
+                        <iframe class="responsiveIframe" src="https://www.youtube.com/embed/wtPI0ueioxk"></iframe>
+                    </div>
+                </div>
+                <div id="threeContainers">
+                    <div class="containerOne">
+                        <img class="containerImg" src="Assets/Images/ubuntu_settings.png" alt="Ubuntu settings"> 
+                    </div>
+                    <div class="containerTwo">
+                        <p>System Requirements</p>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Storage</th>
+                                <th>Architecture</th>
+                            </tr>
+                            <tr>
+                                <td>2GHz Dual-core</td>
+                                <td>4GB</td>
+                                <td>25GB</td>
+                                <td>ARM, AMD64</td>
+                            </tr>
+                        </table>
+                        <p>Current LTS versions</p>
+                        <table>
+                            <tr>
+                            <th>Version</th>
+                            <th>Codename</th>
+                            <th>End of Life</th>
+                            </tr>
+                            <tr>
+                                <td>20.04</td>
+                                <td>Focal Fossa</td>
+                                <td>April 2030</td>
+                            </tr>
+                            <tr>
+                                <td>18.04</td>
+                                <td>Bionic Beaver</td>
+                                <td>April 2028</td>
+                            </tr>
+                            <tr>
+                                <td>16.04</td>
+                                <td>Xenial Xerus</td>
+                                <td>April 2026</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="containerThree">
+                        <img class="containerImg" src="Assets/Images/ubuntu_activities_panel.png" alt="Ubuntu activities panel">
+                    </div>
+                </div>
+                
+                <hr>
+            </main>
+            </div>
+        <footer>
+            <p>Site design: Vilim Mikic, TU856, 2021</p>
+        </footer>
+
+    </body>
+</html>

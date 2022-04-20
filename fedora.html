@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <script src="Assets/Scripts/script.js"></script>
+        <script src="Assets/Scripts/medium-zoom.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="Assets/Images/fedora_icon.png">
+        <title>Fedora</title>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="ubuntu.html"> Ubuntu |</a></li>
+                        <li><a href="arch.html"> Arch |</a></li>
+                        <li><a class="active" href="fedora.html"> Fedora |</a></li>
+                        <li><a href="mint.html"> Linux Mint |</a></li>
+                        <li><a href="contact.html"> Contact Us |</a></li>
+                        <li><a href="report.html"> Web Dev Report |</a></li>
+
+                    </ul>
+                </nav>
+                <div id="rotator"  >
+                    <img id="rotatorImage"  src="Assets/Images/fedora_header.png" alt="Fedora linux logo">
+                    <div class="buttons">
+                        <button class="previous" onclick="previousImage();">&lt;</button>
+                        <button class="next" onclick="nextImage();">></button>
+                    </div>
+                </div>
+                
+            </header>
+            <main>
+                <div id="introText">
+                    <h1>Fedora <img class="smallIntroPic" src="Assets/Images/fedora_icon.png" alt="Round fedora logo"/></h1>
+                    <p>Fedora Linux is a Linux distribution developed by the community-supported Fedora Project which is sponsored primarily by Red Hat, a subsidiary of IBM, with additional support from other companies. Fedora contains software distributed under various free and open-source licenses and aims to be on the leading edge of free technologies. Fedora is the upstream source of the commercial Red Hat Enterprise Linux distribution and for CentOS. Fedora is a fork of Red Hat Linux since RHL was discontinued in 2003.
+                    <br>
+                    Since the release of Fedora 30, five different editions are currently available: Workstation, focused on the personal computer, Server for servers, CoreOS, focused on cloud computing, Silverblue, focused on an immutable desktop specialized to container-based workflows and IoT, focused on IoT devices.
+                    As of February 2016, Fedora has an estimated 1.2 million users, including Linus Torvalds (as of May 2020), creator of the Linux kernel.
+                    </p>
+                    <hr>
+                </div>
+                <div id="content">
+                    <div class=mainContent>
+                    <h2>More about Fedora</h2>
+                    <p>Fedora has a reputation for focusing on innovation, integrating new technologies early on and working closely with upstream Linux communities. Making changes upstream instead of specifically for Fedora ensures that the changes are available to all Linux distributions.
+                    Fedora has a relatively short life cycle: each version is usually supported for at least 13 months, where version X is supported only until 1 month after version X+2 is released and with approximately 6 months between most versions. Fedora users can upgrade from version to version without reinstalling.
+                    The default desktop environment in Fedora is GNOME and the default user interface is the GNOME Shell. Other desktop environments, including KDE Plasma, Xfce, LXQt, LXDE, MATE, Cinnamon, and i3 are available and can be installed.
+                    A Live USB drive can be created using Fedora Media Writer or the dd command. It allows users to try Fedora without making changes to the hard disk.</p>
+                    <h4>Package management</h4>
+                    <p>Most Fedora editions use the RPM package management system, using DNF as a tool to manage the RPM packages. DNF uses libsolv, an external dependency resolver. Flatpak is also included by default, and support for Ubuntu's snaps can be added. Fedora uses Delta RPM when updating installed packages to provide delta updates. A Delta RPM contains the difference between an old and new version of a package. This means that only the changes between the installed package and the new one are downloaded, reducing network traffic and bandwidth consumption.
+                    The Fedora CoreOS and Silverblue editions use rpm-ostree, a hybrid transactional image/package system to manage the host. Traditional DNF (or other systems) should be used in containers.
+                    </p>
+                    </div>
+                    <div class=sideArea>
+                        <iframe class="responsiveIframe" src="https://www.youtube.com/embed/3hQgdBLfeKc"></iframe>
+                    </div>
+                </div>
+                <div id="threeContainers">
+                    <div class="containerOne">
+                        <img class="containerImg" src="Assets/Images/fedora34_ui.png" alt="Fedora App menu"> 
+                    </div>
+                    <div class="containerTwo">
+                        <p>System Requirements</p>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Storage</th>
+                                <th>Architecture</th>
+                            </tr>
+                            <tr>
+                                <td>Dual-core 1.5GHz</td>
+                                <td>2GB</td>
+                                <td>20GB</td>
+                                <td>X86_64, X64</td>
+                            </tr>
+                        </table>
+                        <p>Compatible Desktop Enviroments</p>
+                        <ol>
+                            <li class="list">GNOME | <a class="listA" href="https://www.gnome.org/">GNOME</a></li>
+                            <li class="list">Cinnamon | <a class="listA" href="https://github.com/linuxmint/Cinnamon">Cinnamon</a></li>
+                            <li class="list">KDE plasma | <a class="listA" href="https://kde.org/plasma-desktop/">KDE Plasma</a></li>
+                            <li class="list">Xfce | <a class="listA" href="https://www.xfce.org/">Xfce</a></li>
+                        </ol>
+                    </div>
+                    <div class="containerThree">
+                        <img class="containerImg" src="Assets/Images/fedora_cinnamon.png" alt="Desktop enviroment on Fedora">
+                    </div>
+                </div>
+                
+                <hr>
+            </main>
+        </div>
+        <footer>
+            <p>Site design: Vilim Mikic, TU856, 2021</p>
+        </footer>
+    </body>
+</html>

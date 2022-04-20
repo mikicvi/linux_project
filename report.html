@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="webReport" lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <script src="Assets/Scripts/script.js"></script>
+        <script src="Assets/Scripts/medium-zoom.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="Assets/Images/site_icon.png">
+        <title>Web dev report</title>
+    </head>
+    <body id="webReport" >
+        <div id="main">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="ubuntu.html"> Ubuntu |</a></li>
+                        <li><a href="arch.html"> Arch |</a></li>
+                        <li><a href="fedora.html"> Fedora |</a></li>
+                        <li><a href="mint.html"> Linux Mint |</a></li>
+                        <li><a href="contact.html"> Contact Us |</a></li>
+                        <li><a class="active"  href="report.html"> Web Dev Report |</a></li>
+
+                    </ul>
+                </nav>
+                <div id="rotator">
+                    <img id="rotatorImage"  src="Assets/Images/tulogo.png" alt="Ubuntu logo">
+                </div>
+                
+            </header>
+            <main>
+                <div id="introText">
+                    <h1>Linux <img class="smallIntroPic" src="Assets/Images/site_icon.png" alt="Tux"/></h1>
+                    <h2>Project report</h2>
+                    <p> TU856 <br> Web Development 1 <br> Vilim Mikic - C21737525 </p>
+                    <P>School of Computer Science<br> Technological University Dublin<br> Date: 18th December, 2021</P>
+                </div>
+                <hr>
+                <div id="reportContent">
+                    <div class=reportMainContent>
+                    <h3>1. Problem description</h3>
+                    <p>This website is a collection of brief history on Linux and various Linux distributions such as Ubuntu, Arch linux, Fedora linux and Linux mint. It also offers brief description of above mentioned distributions as well as system requirements, compatible desktop enviroments and currently supported versions of such distributions.</p>
+                    <p>Users of this site might be people who are looking to move away from Windows or MacOS to Linux and are in search of worthwile replacement. They might also just look for brief a brief video of listed Linux distribution to educate themselves on the layout of given distributions. Lastly, some of the previous Linux users might just want to catch up on the current state of the given distribution.</p>
+                    <p>The site solves the problem of scattered and misclassified data and media about above mentioned distributions.</p>
+                    <hr>
+                    <h3>2. Research</h3>
+                    <p>
+                    For the research, I looked at few web sites which are offering some of the above mentioned distributions. All of them are offering plenty of material to work with, but it might seem as "too much information" for a regular user looking to move their personal computer to linux based OS. When I was researching various linux distributions, it felt like there is too much "power user" information and not enough information for a regular user to ease into Linux OS and their respective desktop enviroments.</p> 
+                    <p>Figure 1: Ubuntu website</p>
+                    <div class="researchContainer">
+                        <img class ="researchImg" src="Assets/Images/research_ubuntu.png" alt="Screenshot of Ubuntu website">
+                    </div>
+                    <p>Figure 2: Arch linux website</p>
+                    <div class="researchContainer">
+                        <img class ="researchImg" src="Assets/Images/research_arch.png" alt="Screenshot of Archlinux website">
+                    </div>
+                    <p>Figure 3: Fedora website</p>
+                    <div class="researchContainer">
+                        <img class ="researchImg" src="Assets/Images/research_fedora.png" alt="Screenshot of Fedora website">
+                    </div>
+                    <hr>
+                    <h3>3. Technology Selection and Site Architecture</h3>
+                    <p>For design and implementation of this web site, I used HTML5, CSS 2.1 as well as Javascript.</p>
+                    <h4>HTML5</h4>
+                    <p>TML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft).</p>
+                    <h4>CSS</h4>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                    CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+                    </p>
+                    <h4>Javascript</h4>
+                    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions.
+                    Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.
+                    As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
+                    <hr>
+                    <h3>4. Low Fidelity Prototype</h3>
+                    <p>Wireframes for layout of the website</p>
+                    <div id="threeContainers">
+                        <div class="containerOne">
+                            <img class="containerImg" src="Assets/Images/Wireframes/Landing_page.png" alt="Home page wireframe"> 
+                        </div>
+                        <div class="containerTwo">
+                            <img class="containerImg" src="Assets/Images/Wireframes/Ubuntu.png" alt="Ubuntu page wireframe"> 
+                        </div>
+                        <div class="containerThree">
+                            <img class="containerImg" src="Assets/Images/Wireframes/Arch_linux.png" alt="Ubuntu settings"> 
+                        </div>
+                    </div>
+                    <br>
+                    <div id="threeContainers">
+                        <div class="containerOne">
+                            <img class="containerImg" src="Assets/Images/Wireframes/Fedora.png" alt="Fedora page wireframe"> 
+                        </div>
+                        <div class="containerTwo">
+                            <img class="containerImg" src="Assets/Images/Wireframes/Linux_mint.png" alt="Linux mint page wireframe"> 
+                        </div>
+                        <div class="containerThree">
+                            <img class="containerImg" src="Assets/Images/Wireframes/Project_report.png" alt="Project report wireframe"> 
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>5. Development Plan</h3>
+                    <h4>1. Research</h4>
+                    <p>
+                    I hope for this website to educate the audience on above mentioned linux operating system distributions with giving a brief overview on each Linux flavour. 
+                    <br>
+                    The audience I am trying to reach are users with little or no previous experience with unix-like systems and previous linux users looking to catch up with current state of Linux systems. 
+                    <br>
+                    The goals of the website are to present the topic content in clear and meaningful way with usage of HTML, CSS and Javascript as well as interest users into trying or switching their operating system to Linux.</p>
+                    <h4>2. Design and planning</h4>
+                    <p>This step involved designing the wireframe and sitemap of the website. For that I used a simple photo editor. Planning was very important step since good site layout is crucial to ensure user will easily navigate the site. In this step I have also designed gradients for background, navigation bar and footer.</p>
+                    <h4>3. Writing the content</h4>
+                    <p>In this step the actual content for the website was written and formatted.</p>
+                    <h4>4. Coding the website</h4>
+                    <p>This part took the longest since there was a lot of components on the website that had to look good and still deliver the content in a meaningful way. The website had to look appealing, but not too flashy to distract the reader from the content itself.</p>
+                    <h4>5. Testing</h4>
+                    <p>For this phase various website test tools will be used as well as wide range of browsers and different platforms to confirm that website displays everywhere as intended.</p>
+                    <hr>
+
+                    <h3>6. Testing Plan</h3>
+                    <p>For testing I have used the W3C Markup Validation Service to validate the HTML and W3C CSS Validation Service to validate CSS. Website display testing was done through various different browsers such as Firefox, Chrome, Chromium, Brave, Microsof Edge, Opera, Safari, and yes, Internet explorer. The website was self-hosted on a home Linux server machine to allow for easy access to the website from varous different machines/platforms.</p>
+                    <hr>
+
+                    <h3>7. Site Evaluation</h3>
+                    <p>The site was evaluated with online tools to verify there are no issues with accessibility of content and to conform with HTML5 standards. The site is fully usable with text-to-speech tool as well as fully responsive, meaning it will fit perfectly to any size of the display/device.</p>
+                    <p>I have used free online all in one tool called accessibiliychecker.org</p>
+                    <hr>
+
+                     <h3>Appendix</h3>
+                    Download: <a href="Assets/Documents/Web_Dev_Logbook1-5.docx" download> Logbook</a>
+                    <h4>Logbook</h4>
+                    <p>Week 1:
+                    For my topic I chose to do Linux operating systems. I am aiming to cover  some of the most popular Linux distributions. I am using Ubuntu desktop and Ubuntu server so I will provide my own insights for that specific distribution. I will also cover Arch Linux, Fedora, and Linux Mint. One of the webpages will be focusing on key differences between Windows and Linux. </p>
+
+                    <p>Week 2:
+                    This week, I decided I will use Javascript for moving picture header that will contain clickable images which will correspond to the Logo of the linux distribution. I will also use CSS for a dropdown menu for the nav bar.
+                    </p>
+
+                    <p>Week 3:
+                    This week, I decided to go with layout of the webpage as shown above. I built out the landing pages for various linux distribustions and have included the media queries in the CSS. I will start assembling the layout this week as well as put the actual content in as well.
+                    </p>
+                    
+                    <p>Week4:
+                    This week I implemented image carousel of the various Linux distro logos, with fade effect through Javascript/JQuery. The image carousel is also controllable with next/previous button, which is also done with Javascript.
+                    I have also redesigned the wireframes for layout of the web page.
+                    </p>
+                    <p>Week 5:
+                    Implemented image zoom function with Javascript. Done with placing the content on all of the sites. 
+                    I also implemented Contact us page with input validation with Javascript. 
+                    </p>
+                    <p>Week6:
+                    All of the testing was done in this week. Multiple different web browsers used as well as different operating systems.
+                    </p>
+                    </div>
+                    
+                </div>
+            </main>
+        
+            <footer>
+                <p>Site design: Vilim Mikic, TU856, 2021</p>
+            </footer>
+        </div>
+    </body>
+</html>

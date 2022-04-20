@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <script src="Assets/Scripts/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="Assets/Scripts/medium-zoom.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="Assets/Images/site_icon.png">
+        <title>Contact us</title>
+    </head>
+    <body onload="rotator();">
+        <div>
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="ubuntu.html"> Ubuntu |</a></li>
+                        <li><a href="arch.html"> Arch |</a></li>
+                        <li><a href="fedora.html"> Fedora |</a></li>
+                        <li><a href="mint.html"> Linux Mint |</a></li>
+                        <li><a class="active" href="contact.html"> Contact Us |</a></li>
+                        <li><a href="report.html"> Web Dev Report |</a></li>
+
+                    </ul>
+                </nav>
+                <div id="rotator"  >
+                    <img id="rotatorImage" src="Assets/Images/ubuntu_header.jpg" alt="Ubuntu logo">
+                    <div class="buttons">
+                        <button class="previous" onclick="previousImage();">&lt;</button>
+                        <button class="next" onclick="nextImage();">></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div id="introTextContact">
+                    <h1>Get in touch <img class="smallIntroPic" src="Assets/Images/site_icon.png" alt="Tux"/></h1>
+                    <h2>Contact us if you need any additional information below</h2>
+                    <hr>
+                    
+                    <br>
+                </div>
+
+                <div class="wrapper">
+                    <div id="error_message">
+                       
+                    </div>
+                    <form action="" id="myform" onsubmit = "return validate();">
+                    <label>Name</label>
+                      <div class="input_field">
+                          <input type="text" placeholder="Name" id="name">
+                      </div>
+                      <label>Surname</label>
+                      <div class="input_field">
+                          <input type="text" placeholder="Surname" id="surname">
+                      </div>
+                      <div class="input_field">
+                        <label>Gender</label>
+                        <select class="input_field">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="pnts">Preffer not to say</option>
+                        </select>
+                    </div>
+                      <label>Phone number</label>
+                      <div class="input_field">
+                          <input type="text" placeholder="Phone" id="phone">
+                      </div>
+                      <label>E-mail</label>
+                      <div class="input_field">
+                          <input type="text" placeholder="Email" id="email">
+                      </div>
+                      <div class="input_field">
+                          <textarea placeholder="Message" id="message"></textarea>
+                      </div>
+                      <div class="btn">
+                          <input type="submit">
+                      </div>
+                    </form>
+                  </div>
+            </main>
+        
+            <footer>
+                <p>Site design: Vilim Mikic, TU856, 2021</p>
+            </footer>
+        </div>
+    </body>
+</html>
